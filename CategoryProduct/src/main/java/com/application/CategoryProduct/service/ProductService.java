@@ -21,7 +21,7 @@ public class ProductService {
         return productRepository.findAll();
     }
 
-    /*
+    
     public Product updateProduct(Long id,Product product){
         Product existingProduct = productRepository.findById(id)
             .orElseThrow(()->
@@ -32,8 +32,7 @@ public class ProductService {
     }
 
     public void deleteProduct(Long id){
-        Product existingProduct = productRepository.findById(id).orElseThrow(() -> new RuntimeException("Course with +"+id +"not present"));
         productRepository.deleteById(id);
     }
-    */
+    
 }

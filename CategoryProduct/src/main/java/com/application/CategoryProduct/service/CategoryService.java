@@ -36,10 +36,7 @@ public class CategoryService {
     }
 
     public void deleteCategory(Long id){
-        Category existingCategory = categoryRepository.findById(id)
-        .orElseThrow(() ->
-               new RuntimeException("Course with + "+id +"not present"));
-    categoryRepository.deleteById(id);
+        categoryRepository.deleteById(id);
     }
     
 }
